@@ -1,0 +1,160 @@
+{% load staticfiles %}
+
+<head>  <!-- bootstrapCDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <br><br>
+  <body>
+        <!DOCTYPE html>
+        <html lang="en|kr">
+        
+        <head>
+        
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="">
+          <meta name="author" content="">
+        
+          <title>Introducing - IT 서비스 소개</title>
+        
+          <!-- Bootstrap core CSS -->
+          <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+          <!-- Custom styles for this template -->
+          <link href="css/small-business.css" rel="stylesheet">
+        
+        </head>
+        
+        <body>
+        
+          <!-- Navigation -->
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <div class="container">
+              <a class="navbar-brand" href="#">Introducing</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+          <!-- Page Content -->
+          <div class="container">
+        
+            <!-- Heading Row -->
+            <div class="row align-items-center my-5">
+              <div class="col-lg-7">
+                <img src = "{% static 'food_icon.jpeg'%}" height="300" alt = "음식아이콘">
+                
+              </div>
+              <!-- /.col-lg-8 -->
+              <div class="col-lg-5">
+                <h1 class="font-weight-light" style="background-color: #e3f2fd;"><em>Aimez-vous le dessert?</em></h1>
+                <p>먹고 싶은 디저트가 품절되어 먹지 못 했던 경험이 있나요? 
+                    <br> 마지막 1개가 남았다는 공지를 보고 일단 가보자는 생각으로 디저트 가게에 가보았으나 낙담만 한 적은 없나요? 
+                    <br> 당신의 시간과 발품을 지키기 위한 서비스, <br>
+                    <em> <strong style="background-color: #e3f2fd;">Mon Dessert</strong></em> 입니다.
+                </p>
+                
+              </div>
+              <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                    <div class="card-body">
+                      <p class="text-white m-0">디저트 가게의 라인업을 보고 수량 확인 버튼을 누르면, 
+                          메뉴 별 현재 수량을 알 수 있는 서비스입니다. 
+                          <br> 수량 counting을 매장 pos기기와 연결하여, 
+                          <br> 결제 시 해당 메뉴의 수량이 (전체 수량 -1)씩 되도록 설정하고자 합니다.
+                          <br> 추후 소비자와 판매자 별로 로그인을 다르게 하여, 
+                          <br>판매자의 경우 사업자 번호로 로그인 시, 매장 등록 및 소비자 버전 이용 가능을 구성하고자 합니다.
+                    </p>
+                    </div>
+                  </div>
+        
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h2 class="card-title">Sugar Dorothy</h2>
+                    <h5 calss="card-line_up">Today's Line-up</h5>
+                    <p class="card-text">앙버터<br>카야바닐라 <br> 바닐라 <br> 로투스딸기 <br> 말차초코칩 <br> 
+                        에스프레소바닐라 <br> 누가바 <br> 오레오크림치즈 <br> 민트초코 <br> 쇼콜라 <br> 에스프레소쇼콜라 
+                        <br> 누텔라 <br> 고구마케이크 <br> 크림치즈 <br> 딸기티라미수 <br> 망코패션크림치즈 <br> 애플시나몬
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="btn btn-primary btn-sm">수량 확인</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-md-4 -->
+              <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h2 class="card-title">Danzii</h2>
+                    <h5 calss="card-line_up">Today's Line-up</h5>
+                    <p class="card-text">말차초코(연노랑고양이모양) <br> 연유팥 (수박모양) <br> 타히티바닐라(꼬끄에도 타히티빈) <br>
+                        다크체리쇼콜라(생체리) <br> 레드벨벳크림치즈 <br> 쿠앤크브라우니 <br> 콩고물인절미 <br> 슈크림라떼 (수제슈크림) <br>
+                        <br>  (priminum_ver) 엄마는 외계인 (핑크고양이모양) <br> (priminum_ver) 청포도 요거트 (흰둥이 모양) <br> (기타) <br> 머랭 쿠키 <br> 꼬끄후레이크 <br> 오레오브라우니
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="btn btn-primary btn-sm">수량 확인</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-md-4 -->
+              <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h2 class="card-title">Sweet me up</h2>
+                    <h5 calss="card-line_up">Today's Line-up</h5>
+                    <p class="card-text">바닐라 <br> 크렘브륄레 <br> 티라미수 <br> 인절미 <br> 로투스크림치즈 
+                        <br> 오레오크림치즈 <br> 크림치즈 <br> 초코가나슈 <br>딸기잼크림치즈 <br><br>
+                        (set) 호빵맨 세트 - 9000원 <br> 
+                        짤랑이 - 누텔라바닐라 <br> 식빵맨 - 로투스크림치즈 <br> 카레빵맨 - 초코가나슈 <br> 호빵맨 - 오레오크림치즈
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="btn btn-primary btn-sm">수량 확인</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-md-4 -->
+        
+            </div>
+            <!-- /.row -->
+        
+          </div>
+          <!-- /.container -->
+        
+          <!-- Footer -->
+          <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white"> Nous vivons pour manger </p>
+            </div>
+            <!-- /.container -->
+          </footer>
+        
+          <!-- Bootstrap core JavaScript -->
+          <script src="vendor/jquery/jquery.min.js"></script>
+          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        </body>
+        
+        </html>
+  </body>
